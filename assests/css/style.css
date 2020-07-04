@@ -1,0 +1,111 @@
+@import url(reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Quicksand:wght@300;400&display=swap');
+
+
+body {
+    background: white;
+    font-family: montserrat, sans-serif;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: montserrat, sans-serif;
+    margin-bottom: 20px;
+}
+
+h1 {
+    background-color: antiquewhite;
+    padding: 20px;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    text-align: right
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+p {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+}
+
+a {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+
+}
+
+a:hover {
+    text-decoration: underline;
+
+}
+
+a:visited {
+    color: #cccccc;
+
+}
+
+a:active {}
+
+.wrapper {
+    width: 980px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: white;
+    height: 200px;
+    padding: 20px;
+}
+
+img {
+    padding: 20px;
+}
+
+nav {
+    background-color: darkgray;
+}
+
+nav ul {}
+
+nav ul li {
+    display: inline;
+    margin-right: 50px;
+}
+
+nav au li a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: cadetblue;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+
+nav au li a:hover {
+    background-color: black;
+
+}
+
+main {
+    background: #B4C9CB;
+    padding: 20px;
+
+}
+
+footer {
+    padding: 20px;
+}
