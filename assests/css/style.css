@@ -4,9 +4,10 @@
 
 
 body {
-    background: white;
+    background-color: white;
+    color: #515A5A;
     font-family: montserrat, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 h1,
@@ -20,7 +21,7 @@ h6 {
 }
 
 h1 {
-    background-color: antiquewhite;
+    background-color: #B4C9CB;
     padding: 20px;
     font-size: 35px;
     font-weight: bold;
@@ -35,7 +36,7 @@ h2 {
 }
 
 p {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 23px;
     margin-bottom: 20px;
     text-align: left;
@@ -43,8 +44,7 @@ p {
 }
 
 a {
-    color: white;
-    background-color: black;
+    color: black;
     text-decoration: none;
 
 }
@@ -54,12 +54,11 @@ a:hover {
 
 }
 
-a:visited {
-    color: #cccccc;
+a:visited {}
 
+a:active {
+    color: darkblue;
 }
-
-a:active {}
 
 .wrapper {
     width: 980px;
@@ -69,43 +68,68 @@ a:active {}
 header {
     background-color: white;
     height: 200px;
-    padding: 20px;
 }
 
-img {
-    padding: 20px;
-}
-
-nav {
-    background-color: darkgray;
-}
+nav {}
 
 nav ul {}
 
 nav ul li {
     display: inline;
-    margin-right: 50px;
+    margin-right: 100px;
 }
 
 nav au li a {
-    color: #ffffff;
     text-decoration: none;
-    background-color: cadetblue;
     padding: 10px 15px;
     text-transform: uppercase;
 }
 
 nav au li a:hover {
-    background-color: black;
+    background-color: darkgrey;
+    text-decoration: none;
+}
 
+nav au li a.currentpage {
+    background-color: darkgrey;
+    text-decoration: none;
+}
+
+.hero {
+    min-height: 300px;
+    background-image: url(../images/churchill-house-4.jpg);
+    background-color: #F5F5F5;
+    background-size: cover;
+    background-position: bottom;
 }
 
 main {
     background: #B4C9CB;
     padding: 20px;
+    overflow: auto;
+}
+
+.text-container {
+    width: 80%;
 
 }
 
 footer {
     padding: 20px;
+    background-color: #F5F5F5;
+}
+
+footer p {
+    font-size: 14px;
+    color: dimgray;
+}
+
+.leftimg {
+    width: 50%;
+    border: 10px solid white;
+    padding: 10px;
+    background-color: white;
+    margin: 20px 20px;
+
+
 }
