@@ -2,12 +2,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Quicksand:wght@300;400&display=swap');
 
+/* https://meyerweb.com/eric/tools/css/reset/ */
+
+
 
 body {
     background-color: white;
     color: #515A5A;
     font-family: montserrat, sans-serif;
     font-size: 20px;
+}
+
+/*  Fixed header and style  */
+
+.header {
+    padding: 10px 16px;
+
 }
 
 h1,
@@ -110,7 +120,7 @@ main {
 }
 
 .text-container {
-    width: 80%;
+    text-align: left;
 
 }
 
@@ -129,7 +139,6 @@ footer p {
     border: 10px solid white;
     padding: 10px;
     background-color: white;
-    margin: 20px 20px;
-
+    margin: 0px 150px;
 
 }
