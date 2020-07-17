@@ -15,7 +15,6 @@ body {
 
 /*  Fixed header and style  */
 
-.fixed-header {}
 
 h1,
 h2,
@@ -73,7 +72,7 @@ a:active {
 }
 
 .wrapper {
-    width: 80%;
+    width: 1600px;
     margin: auto;
 
 }
@@ -85,13 +84,13 @@ header {
 
 .fixed-header {
     position: fixed;
-    width: 80%;
+    width: 85%;
     top: 0;
     margin: 0 auto;
 }
 
+/*
 nav {
-
     padding: 20px;
     background-color: white;
 
@@ -103,7 +102,7 @@ nav ul li {
     display: inline;
     padding-top: 50px;
     padding-bottom: 50;
-    margin-right: 100px;
+    padding: inherit;
 }
 
 nav au li a:hover {
@@ -114,6 +113,30 @@ nav au li a:hover {
 nav au li a.currentpage {
     background-color: darkgrey;
     text-decoration: none;
+}
+*/
+
+.navbar {
+    width: 100%;
+    overflow: auto;
+}
+
+.navbar a {
+    display: block;
+    float: left;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    width: 33.33%;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: aliceblue;
+}
+
+.nabar a.active {
+    background-color: dimgray;
 }
 
 /* Hero stles   */
@@ -148,10 +171,6 @@ main {
     overflow: auto;
 }
 
-ul {
-    list-style-type: circle;
-
-}
 
 .text-container {
     text-align: left;
@@ -159,16 +178,20 @@ ul {
 
 }
 
+ul.a {
+    list-style-type: circle;
+}
 
 
 footer {
-    padding: 10px;
+    padding: 20px;
     background-color: #F5F5F5;
 }
 
 footer p {
     font-size: 14px;
     color: dimgray;
+    text-align: center;
 }
 
 /* Home page images */
@@ -254,8 +277,17 @@ div.desc {
     clear: both;
 }
 
-@media screen and (max-device-width: 480px) {
-    .column {
+@media screen and (max-device-width: 1600px) {
+    .wrapper {
+        width: 85%;
+    }
+}
+
+@media (max-width:500px) {
+    .navbar a {
         float: none;
+        display: initial;
+        width: 100%;
+        text-align: left;
     }
 }
