@@ -4,21 +4,18 @@
 
 /* https://meyerweb.com/eric/tools/css/reset/ */
 
-
-
 body {
     background-color: white;
     color: #515A5A;
     font-family: montserrat, sans-serif;
     font-size: 20px;
+    padding-top: 80px;
+    padding-bottom: 40px;
 }
 
 /*  Fixed header and style  */
 
-.header {
-    padding: 10px 16px;
-
-}
+.fixed-header {}
 
 h1,
 h2,
@@ -40,9 +37,14 @@ h1 {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 28px;
     font-weight: bold;
 
+}
+
+h3 {
+    font-size: 24;
+    font-weight: bold;
 }
 
 p {
@@ -71,28 +73,37 @@ a:active {
 }
 
 .wrapper {
-    width: 980px;
-    margin: 0 auto;
+    width: 80%;
+    margin: auto;
+
 }
 
 header {
-    background-color: white;
-    height: 150px;
+    height: 60px;
+    width: 80%;
 }
 
-nav {}
+.fixed-header {
+    position: fixed;
+    width: 80%;
+    top: 0;
+    margin: 0 auto;
+}
+
+nav {
+
+    padding: 20px;
+    background-color: white;
+
+}
 
 nav ul {}
 
 nav ul li {
     display: inline;
+    padding-top: 50px;
+    padding-bottom: 50;
     margin-right: 100px;
-}
-
-nav au li a {
-    text-decoration: none;
-    padding: 10px 15px;
-    text-transform: uppercase;
 }
 
 nav au li a:hover {
@@ -105,6 +116,8 @@ nav au li a.currentpage {
     text-decoration: none;
 }
 
+/* Hero stles   */
+
 .hero {
     min-height: 300px;
     background-image: url(../images/churchill-house-4.jpg);
@@ -113,19 +126,43 @@ nav au li a.currentpage {
     background-position: bottom;
 }
 
+.heroabout {
+    min-height: 300px;
+    background-image: url(../images/robin-boyd-portrait-copyright-Mark-Strizic.jpg);
+    background-color: #F5F5F5;
+    background-size: contain;
+}
+
+.herohistory {
+    min-height: 300px;
+    background-image: url(../images/churchill-house-18b&w.jpg);
+    background-color: #f5f5f5;
+    background-size: cover;
+    background-position: center;
+
+}
+
 main {
     background: #B4C9CB;
     padding: 20px;
     overflow: auto;
 }
 
-.text-container {
-    text-align: left;
+ul {
+    list-style-type: circle;
 
 }
 
+.text-container {
+    text-align: left;
+    font-size: 20;
+
+}
+
+
+
 footer {
-    padding: 20px;
+    padding: 10px;
     background-color: #F5F5F5;
 }
 
@@ -134,11 +171,91 @@ footer p {
     color: dimgray;
 }
 
-.leftimg {
-    width: 50%;
-    border: 10px solid white;
-    padding: 10px;
-    background-color: white;
-    margin: 0px 150px;
+/* Home page images */
 
+.leftimg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.angle2 {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*  about image */
+
+.plaqueimg {
+    max-width: 30%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid;
+}
+
+
+/*  responsive gallery */
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+
+}
+
+/*  Media Queries   */
+
+@media only screen and (max-width:700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-device-width: 480px) {
+    .column {
+        float: none;
+    }
 }
